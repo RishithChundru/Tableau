@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Live vs extract (Live vs Extract)' inline='true' name='federated.0etpzbh0cqy17x186zh0u1wcfyjl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Live vs Extract' name='excel-direct.1b4v9bv1uxiki017sfuxu1pcr2jr'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/lpu/5th sem/INT233/datasets/Live vs Extract.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1b4v9bv1uxiki017sfuxu1pcr2jr' name='Live vs extract' table='[&apos;Live vs extract$&apos;]' type='table'>
+          <columns gridOrigin='A1:E12:no:A1:E12:0' header='yes' outcome='2'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Products' ordinal='1' />
+            <column datatype='string' name='Product code' ordinal='2' />
+            <column datatype='integer' name='Quantity' ordinal='3' />
+            <column datatype='integer' name='Price' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1b4v9bv1uxiki017sfuxu1pcr2jr' name='Live vs extract' table='[&apos;Live vs extract$&apos;]' type='table'>
+          <columns gridOrigin='A1:E12:no:A1:E12:0' header='yes' outcome='2'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Products' ordinal='1' />
+            <column datatype='string' name='Product code' ordinal='2' />
+            <column datatype='integer' name='Quantity' ordinal='3' />
+            <column datatype='integer' name='Price' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Live vs extract]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E13:no:A1:E13:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Live vs extract]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Products</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Products]</local-name>
+            <parent-name>[Live vs extract]</parent-name>
+            <remote-alias>Products</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product code]</local-name>
+            <parent-name>[Live vs extract]</parent-name>
+            <remote-alias>Product code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Live vs extract]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[Live vs extract]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Live vs extract' datatype='table' name='[__tableau_internal_object_id__].[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/lpu/5th sem/INT233/Notes/tableau files/Live vs extract (Live vs Extract).hyper' default-settings='yes' schema='Extract' sslmode='' update-time='08/23/2024 10:17:25 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Live vs extract (Live vs Extract)' increment-value='%null%' refresh-type='create' rows-inserted='12' timestamp-start='2024-08-23 10:17:25.134' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Live vs extract</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Products</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Products]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Products</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Live vs extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product code</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Live vs extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Live vs extract</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Live vs extract</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Live vs extract' id='Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C'>
+            <properties context=''>
+              <relation connection='excel-direct.1b4v9bv1uxiki017sfuxu1pcr2jr' name='Live vs extract' table='[&apos;Live vs extract$&apos;]' type='table'>
+                <columns gridOrigin='A1:E12:no:A1:E12:0' header='yes' outcome='2'>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='Products' ordinal='1' />
+                  <column datatype='string' name='Product code' ordinal='2' />
+                  <column datatype='integer' name='Quantity' ordinal='3' />
+                  <column datatype='integer' name='Price' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Live vs extract (Live vs Extract)' name='federated.0etpzbh0cqy17x186zh0u1wcfyjl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0etpzbh0cqy17x186zh0u1wcfyjl'>
+            <_.fcp.ObjectModelTableType.false...column caption='Live vs extract' datatype='integer' name='[__tableau_internal_object_id__].[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Live vs extract' datatype='table' name='[__tableau_internal_object_id__].[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0etpzbh0cqy17x186zh0u1wcfyjl].[__tableau_internal_object_id__].[cnt:Live vs extract_E097F20BBC5F4AE6BD0530F234A8703C:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0etpzbh0cqy17x186zh0u1wcfyjl].[yr:Date:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{7A7F941B-A1DC-42BF-A742-ED56CFE04819}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0etpzbh0cqy17x186zh0u1wcfyjl].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{17C802F8-B6E2-4F17-8251-7D58E0D8D303}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='108' name='Sheet 1' width='144'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
