@@ -641,23 +641,6 @@
               <bucket>&quot;[federated.1motb7i0abxo7j1dgtmsj1fl9mny].[sum:Energy Consumed (kwh):qk]&quot;</bucket>
             </map>
           </encoding>
-          <encoding attr='color' field='[none:Charging Station Location:nk]' palette='green_10_0' type='palette'>
-            <map to='#24693d'>
-              <bucket>&quot;San Francisco&quot;</bucket>
-            </map>
-            <map to='#378848'>
-              <bucket>&quot;New York&quot;</bucket>
-            </map>
-            <map to='#5ea654'>
-              <bucket>&quot;Los Angeles&quot;</bucket>
-            </map>
-            <map to='#7fc572'>
-              <bucket>&quot;Houston&quot;</bucket>
-            </map>
-            <map to='#b3e0a6'>
-              <bucket>&quot;Chicago&quot;</bucket>
-            </map>
-          </encoding>
           <encoding attr='color' field='[none:Vehicle Model:nk]' palette='green_10_0' type='palette'>
             <map to='#308344'>
               <bucket>&quot;Tesla Model 3&quot;</bucket>
@@ -673,6 +656,23 @@
             </map>
             <map to='#b3e0a6'>
               <bucket>&quot;Chevy Bolt&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Charging Station Location:nk]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>&quot;San Francisco&quot;</bucket>
+            </map>
+            <map to='#378848'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#5ea654'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#7fc572'>
+              <bucket>&quot;Houston&quot;</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>&quot;Chicago&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -1041,9 +1041,13 @@
           <filter class='categorical' column='[federated.1motb7i0abxo7j1dgtmsj1fl9mny].[Action (Charging Station Location)]'>
             <groupfilter function='level-members' level='[Charging Station Location]' user:ui-action-filter='[Action2_0EFACAEDE9D343C9868856FD0DCA5793]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
+          <filter class='categorical' column='[federated.1motb7i0abxo7j1dgtmsj1fl9mny].[Action (Vehicle Model)]'>
+            <groupfilter function='level-members' level='[Vehicle Model]' user:ui-action-filter='[Action6_89FACDFB38E445509FE4900CF5BAB94F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
           <computed-sort column='[federated.1motb7i0abxo7j1dgtmsj1fl9mny].[none:Vehicle Model:nk]' direction='ASC' using='[federated.1motb7i0abxo7j1dgtmsj1fl9mny].[avg:Vehicle Age (years):qk]' />
           <slices>
             <column>[federated.1motb7i0abxo7j1dgtmsj1fl9mny].[Action (Charging Station Location)]</column>
+            <column>[federated.1motb7i0abxo7j1dgtmsj1fl9mny].[Action (Vehicle Model)]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -2171,7 +2175,7 @@
             </zone>
             <zone h='91987' id='82' param='horz' type-v2='layout-flow' w='99034' x='483' y='7135'>
               <zone h='91987' id='6' type-v2='layout-basic' w='99034' x='483' y='7135'>
-                <zone h='46005' id='9' name='Average Energy Consumed by Ev&apos;s in Each Location' w='24735' x='483' y='53117'>
+                <zone h='46012' id='9' name='Average Energy Consumed by Ev&apos;s in Each Location' w='24730' x='483' y='53110'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2179,7 +2183,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='45982' id='35' is-scaled='1' param='C:/College PPTs/5th SEM/INT233/Project/image.jpg' type-v2='bitmap' w='24733' x='483' y='7135'>
+                <zone h='45975' id='35' is-scaled='1' param='C:/College PPTs/5th SEM/INT233/Project/image.jpg' type-v2='bitmap' w='24728' x='483' y='7135'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2187,7 +2191,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='13830' id='70' name='Measure Values' show-title='false' w='49536' x='49981' y='7135'>
+                <zone h='13825' id='70' name='Measure Values' show-title='false' w='49541' x='49976' y='7135'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2195,7 +2199,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='45982' id='72' name='Average Vehicle Age For Vehicle Model' w='24765' x='25216' y='7135'>
+                <zone h='45975' id='72' name='Average Vehicle Age For Vehicle Model' w='24765' x='25211' y='7135'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2203,7 +2207,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='46005' id='76' name='Total Distance Travelled by Each Vehicle Model' w='24763' x='25218' y='53117'>
+                <zone h='46012' id='76' name='Total Distance Travelled by Each Vehicle Model' w='24763' x='25213' y='53110'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2211,7 +2215,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='46005' id='80' name='Comparsion on Charging Duration and Charging Rate ' w='49536' x='49981' y='53117'>
+                <zone h='46012' id='80' name='Comparsion on Charging Duration and Charging Rate ' w='49541' x='49976' y='53110'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2219,7 +2223,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='32152' id='85' name='Charging Cost For Each Location' w='49536' x='49981' y='20965'>
+                <zone h='32150' id='85' name='Charging Cost For Each Location' w='49541' x='49976' y='20960'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2249,8 +2253,8 @@
           </layout-options>
           <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='195' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98244' id='194' param='vert' type-v2='layout-flow' w='99034' x='483' y='878'>
+            <zone h='100000' id='201' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98244' id='200' param='vert' type-v2='layout-flow' w='99034' x='483' y='878'>
                 <zone h='6257' id='100' type-v2='title' w='99034' x='483' y='878'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2260,7 +2264,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='45982' id='35' is-fixed='true' is-scaled='1' param='C:/College PPTs/5th SEM/INT233/Project/image.jpg' type-v2='bitmap' w='24733' x='483' y='7135'>
+                <zone fixed-size='280' h='45975' id='35' is-fixed='true' is-scaled='1' param='C:/College PPTs/5th SEM/INT233/Project/image.jpg' type-v2='bitmap' w='24728' x='483' y='7135'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2269,7 +2273,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='45982' id='72' is-fixed='true' name='Average Vehicle Age For Vehicle Model' w='24765' x='25216' y='7135'>
+                <zone fixed-size='280' h='45975' id='72' is-fixed='true' name='Average Vehicle Age For Vehicle Model' w='24765' x='25211' y='7135'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2278,7 +2282,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='103' h='13830' id='70' is-fixed='true' name='Measure Values' show-title='false' w='49536' x='49981' y='7135'>
+                <zone fixed-size='103' h='13825' id='70' is-fixed='true' name='Measure Values' show-title='false' w='49541' x='49976' y='7135'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2287,7 +2291,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='249' h='32152' id='85' is-fixed='true' name='Charging Cost For Each Location' w='49536' x='49981' y='20965'>
+                <zone fixed-size='249' h='32150' id='85' is-fixed='true' name='Charging Cost For Each Location' w='49541' x='49976' y='20960'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2296,7 +2300,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='46005' id='9' is-fixed='true' name='Average Energy Consumed by Ev&apos;s in Each Location' w='24735' x='483' y='53117'>
+                <zone fixed-size='280' h='46012' id='9' is-fixed='true' name='Average Energy Consumed by Ev&apos;s in Each Location' w='24730' x='483' y='53110'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2305,7 +2309,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='46005' id='76' is-fixed='true' name='Total Distance Travelled by Each Vehicle Model' w='24763' x='25218' y='53117'>
+                <zone fixed-size='280' h='46012' id='76' is-fixed='true' name='Total Distance Travelled by Each Vehicle Model' w='24763' x='25213' y='53110'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2314,7 +2318,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='46005' id='80' is-fixed='true' name='Comparsion on Charging Duration and Charging Rate ' w='49536' x='49981' y='53117'>
+                <zone fixed-size='280' h='46012' id='80' is-fixed='true' name='Comparsion on Charging Duration and Charging Rate ' w='49541' x='49976' y='53110'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2683,11 +2687,6 @@
         </edge>
       </cards>
       <viewpoint>
-        <current-page>
-          <multibucket>
-            <bucket>&quot;Tesla Model 3&quot;</bucket>
-          </multibucket>
-        </current-page>
         <zoom type='entire-view' />
         <highlight>
           <color-one-way>
@@ -2697,7 +2696,7 @@
       </viewpoint>
       <simple-id uuid='{41A63C80-D00D-449B-8FD1-15CD3DB4C9CF}' />
     </window>
-    <window class='worksheet' maximized='true' name='Battery Capacity For Each Vehicle Model'>
+    <window class='worksheet' name='Battery Capacity For Each Vehicle Model'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2728,7 +2727,7 @@
       </viewpoint>
       <simple-id uuid='{0F4559E4-86C6-438C-A419-BEAD1184FF19}' />
     </window>
-    <window class='dashboard' name='DASHBOARD'>
+    <window class='dashboard' maximized='true' name='DASHBOARD'>
       <viewpoints>
         <viewpoint name='Average Energy Consumed by Ev&apos;s in Each Location'>
           <zoom type='entire-view' />
@@ -2749,7 +2748,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='35' />
+      <active id='100' />
       <simple-id uuid='{12EF731B-F360-48DA-A2EF-E37A0DF1370D}' />
     </window>
   </windows>
